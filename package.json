@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "emulator:setjava": "/usr/libexec/java_home -v 11.0.21 ",
-    "firestore:test": "npm run emulator:setjava && npx --yes firebase-tools emulators:exec --project relloca-tes --only firestore  \"ng test\""
+    "firestore:test": "npm run emulator:setjava && npx --yes firebase-tools emulators:exec --project relloca-test --only firestore  \"ng test --browsers=ChromeHeadless\""
   },
   "private": true,
   "dependencies": {
